@@ -33,6 +33,10 @@ database.once('connected', () => {
 
 
 
+app.get('/', (req, res) => {
+    res.send('<h1>Server started successfully</h1>')
+})
+
 
 app.use('/user/v1',router)
 app.use('/user/v1', bookRouter)
